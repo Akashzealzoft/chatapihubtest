@@ -1,0 +1,33 @@
+# Ignore node_modules directory
+node_modules
+
+# Ignore build or output directories
+dist
+out
+
+# Ignore generated files
+*.min.js
+*.min.css
+
+# Ignore coverage reports
+coverage
+
+# Ignore configuration files
+.eslintrc
+.stylelintrc
+.prettierrc
+.editorconfig
+
+# Ignore Git related files
+.git
+
+# Ignore log files
+*.log
+
+# Ignore compiled TypeScript files
+*.js
+*.d.ts
+
+# Ignore package-lock.json or yarn.lock
+package-lock.json
+yarn.lock
