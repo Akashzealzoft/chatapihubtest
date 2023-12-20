@@ -14,7 +14,7 @@ import { ApiError } from "./utils/ApiError.js";
 
 // * App routes
 
-
+import userRouter from "./routes/apps/auth/user.routes.js";
 
 const app = express();
 
@@ -65,5 +65,7 @@ app.use(cookieParser())
 
 
 initializeSocketIO(io)
+
+app.use("/api/v1/users", userRouter);
 
 export { httpServer };

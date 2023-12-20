@@ -5,10 +5,11 @@ import {
     registerUser
 } from '../../../controllers/apps/auth/user.controller.js'
 import {
-    verifyJWT,
+    verifyJwt,
     verifyPermission
 } from '../../../middlewares/auth.middleware.js'
 import { validate } from "../../../validators/validate.js";
+import { userRegisterValidator,userLoginValidator } from "../../../validators/apps/auth/user.validators.js";
 
 
 const router = Router();
